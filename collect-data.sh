@@ -2,9 +2,9 @@
 
 # SURVEY QUESTIONS
 
-# What is your full name?
-echo "What is your full name?"
-read FULLNAME
+# What is your favorite form of entertainment?
+echo "What is your favorite form of entertainment?"
+read FAVENT
 
 # What is your favorite book genre?
 echo "What is your favorite book genre?"
