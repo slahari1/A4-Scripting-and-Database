@@ -2,15 +2,15 @@
 
 # SURVEY QUESTIONS
 
-# What is your favorite form of entertainment?
-echo "What is your favorite form of entertainment?"
-read FAVENT
+# W?
+echo "What is your favorite genre of music?"
+read 
 
-# What is your favorite book genre?
+# ?
 echo "What is your favorite book genre?"
 read FAVBKGENRE
 
-# What is your favorite book? 
+# ? 
 echo "What is your favorite book?"
 read FAVBOOK
 
@@ -40,3 +40,9 @@ cat temp.csv
 
 # connect this bash script with database bash script
 bash ./write-to-db.sh
+
+# Back up data
+cat ./temp.csv >> data-backup.csv
+
+# Remove temp file
+rm temp.csv
