@@ -17,7 +17,7 @@ mysql -u"$MYSQLUSER" -p"$MYSQLPASS" -e "CREATE DATABASE $MYDATABASE"
 echo "Created database"
 
 # Create table
-mysql -u"$MYSQLUSER" -p"$MYSQLPASS" -e "CREATE TABLE $MYTABLE (ID VARCHAR(255), Date TIMESTAMP, FavMusicGenre VARCHAR(255), FavArtist VARCHAR(255), FavSong VARCHAR(255) FavStreamSer VARCHAR(255), PurchaseMusic INT); 
+mysql -u"$MYSQLUSER" -p"$MYSQLPASS" -e "CREATE TABLE $MYTABLE (ID VARCHAR(255), Date TIMESTAMP, FavMusicGenre VARCHAR(255), FavArtist VARCHAR(255), FavSong VARCHAR(255), FavStreamSer VARCHAR(255), PurchaseMusic INT); 
                                        ALTER TABLE $MYTABLE ADD PRIMARY KEY (ID);" $MYDATABASE
 echo "Created table"
 
