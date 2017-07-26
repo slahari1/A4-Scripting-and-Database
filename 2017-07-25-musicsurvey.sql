@@ -40,7 +40,7 @@ CREATE TABLE `tblSurveyQuestions` (
 
 LOCK TABLES `tblSurveyQuestions` WRITE;
 /*!40000 ALTER TABLE `tblSurveyQuestions` DISABLE KEYS */;
-INSERT INTO `tblSurveyQuestions` VALUES ('A^%C&cC`fH','2017-07-26 02:13:06','Classic Rock','November Rain','Guns N\' Roses','Spotify',2);
+INSERT INTO `tblSurveyQuestions` VALUES ('9#vcbaXKz(','2017-07-26 03:47:06','Alternative','Alt-J','Breezeblocks','Spotify',1),('A^%C&cC`fH','2017-07-26 02:13:06','Classic Rock','November Rain','Guns N\' Roses','Spotify',2),('eDh!(1kJdu','2017-07-26 03:46:11','Country','Carrie Underwood','Before He Cheats','Soundcloud',3),('jk`_35Ri!@','2017-07-26 03:51:45','Pop','Rihanna','Disturbia','Youtube',1),('M^kVEa*V%T','2017-07-26 03:52:37','Hip-hop','Kendrick Lamar','Humble','Spotify',2);
 /*!40000 ALTER TABLE `tblSurveyQuestions` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -53,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-07-25 23:39:28
+-- Dump completed on 2017-07-25 23:52:37

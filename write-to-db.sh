@@ -16,12 +16,10 @@ echo "Data copied to secure directory."
 mysql -u"$MYSQLUSER" -p"$MYSQLPASS" -e "CREATE DATABASE $MYDATABASE"
 echo "Created database"
 
-#mysql -u "$MYSQLUSER" -p "$MYSQLPASS" $MYDATABASE < $MYDATABASE-db.sql
-
 # Create table
-mysql -u"$MYSQLUSER" -p"$MYSQLPASS" -e "CREATE TABLE $MYTABLE (ID VARCHAR(255), Date TIMESTAMP, FavMusicGenre VARCHAR(255), FavSong VARCHAR(255), FavArtist VARCHAR(255), FavStreamSer VARCHAR(255), PurchaseMusic INT); 
+mysql -u"$MYSQLUSER" -p"$MYSQLPASS" -e "CREATE TABLE $MYTABLE (ID VARCHAR(255), Date TIMESTAMP, FavMusicGenre VARCHAR(255), FavArtist VARCHAR(255), FavSong VARCHAR(255) FavStreamSer VARCHAR(255), PurchaseMusic INT); 
                                        ALTER TABLE $MYTABLE ADD PRIMARY KEY (ID);" $MYDATABASE
-#echo "Created table"
+echo "Created table"
 
 # Write data from temp.csv into database table
 mysql -u"$MYSQLUSER" -p"$MYSQLPASS" -e "LOAD DATA INFILE '/var/lib/mysql-files/temp.csv' INTO TABLE $MYDATABASE.$MYTABLE FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '\"';" $MYDATABASE
@@ -32,5 +30,5 @@ mysqldump -u"$MYSQLUSER" -p"$MYSQLPASS" $MYDATABASE > `date --iso-8601`-$MYDATAB
 echo "Survey data dumped to file `date --iso-8601`-$MYDATABASE.sql"
 
 # remove /var/lib/mysql-files/temp.csv
-#sudo rm /var/lib/mysql-files/temp.csv
+sudo rm /var/lib/mysql-files/temp.csv
 
